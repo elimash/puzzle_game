@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="compiled/flipclock.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="compiled/flipclock.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/puzzle.css">
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyTime Puzzle</title>
+    <script src="js/puzzle.js" onclick="init"></script>
+</head>
+<body onload="init();">
+    <div class="container">
+        <div id="canvasDiv" style="float: left; width: 737px; height: 462px;">
+            <iframe id="lbIframe" src="leaders.html" style="visibility: hidden"></iframe>
+            <canvas id="puzzleCanvas" style="float:left"></canvas>
+        </div>
+        <aside id="sideMenu" style="padding: 0px; float: left;">
+            <ul class="uls" style="list-style-type: none; margin-top: 25px; padding-left:5px;" >
+                <li class="listItem"><button class="navButtons" onclick="prevImage()" style="background-image:url('assets/Left.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="replayGame()" style="background-image:url('assets/Refresh.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="nextImage()" style="background-image:url('assets/Right.png');"> </button></li>
+            </ul>
+            <br>
+            <div class="clock"></div>
+            <br>
+            <div style="margin-left: 10px;"> Your Best Score <br>
+                <div id="bestScore4Puzzle" class="counter">
+                </div>
+            </div>
+            <br> <br> <br>
+            <ul style="list-style-type: none; margin-top: 25px; padding-left:5px;" >
+                <li class="listItem"><button class="navButtons" onclick="userSettings()" style="background-image:url('assets/Profile.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="leadersBoard()" style="background-image:url('assets/Leaders.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="iqPage()" style="background-image:url('assets/IQ.png');"> </button></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>

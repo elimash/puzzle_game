@@ -1,0 +1,118 @@
+:root {
+  --cpPercentage: 80%;
+  --asPercentage: 77%;
+  --frameHeight: 380px;
+}
+
+body {
+    font-family: 'Open Sans',serif;
+    font-size: 0.9em;
+}
+
+h1 {
+    text-align:center;
+    font-weight: normal;
+    margin: -15px;
+}
+
+.barContainers {
+    width:50px;
+    height:var(--frameHeight);
+    background-color:#85D3D9;
+    position: relative;
+    float: left;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.sideTitles {
+    margin: 0px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#averageScoreTitle {
+    margin-left: 40px;
+}
+
+#currentPuzzleThumbnail {
+            float:left;
+            width: 100px;
+            height: 62px;
+            margin-right: 5px;
+}
+
+#currentPuzzle {
+    margin-left: 35px;
+}
+
+#you {
+    float: left;
+    width: 160px;
+    height: var(--frameHeight);
+    text-align: center;
+    background: #267072;
+    color: white;
+    margin-top: 28px;
+    border-radius: 12px;
+}
+
+#youTitle {
+    margin: 0px;
+    font-weight: normal;
+}
+
+#youCanvas {
+    float: left;
+    position: relative;
+}
+
+#cpPercentageBar {
+    text-align: center;
+    background-color:#27A7B3;
+    position: absolute;
+    width:50px;
+    bottom: 0;
+    border-top: 8px solid #267072;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    height: var(--cpPercentage);
+    animation-name: cpPercentageAnim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#asPercentageBar {
+    text-align: center;
+    background-color:#27A7B3;
+    position: absolute;
+    width:50px;
+    bottom: 0;
+    border-top: 8px solid #267072;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    height: var(--asPercentage);
+    animation-name: asPercentageAnim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes cpPercentageAnim {
+  from {
+    height: 15%;
+  }
+  to {
+    height: var(--cpPercentage);
+  }
+}
+@keyframes asPercentageAnim {
+  from {
+    height: 15%;
+  }
+  to {
+    height: var(--asPercentage);
+  }
+}

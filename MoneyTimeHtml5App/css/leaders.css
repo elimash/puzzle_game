@@ -1,0 +1,71 @@
+        head {
+        }
+        h1 {
+            text-align: center;
+            margin: 0px;
+            margin-bottom: -5px;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        body {
+            background: lightgray;
+            font-family: 'Open Sans',serif;
+            font-size: 0.9em;
+        }
+        span {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #leftSide {
+            float:left;
+            margin-left: 50px;
+            width: 280px;
+        }
+        #rightSide {
+            float: left;
+            margin-left: 25px;
+            width: 280px;
+        }
+        #currentPuzzleThumbnail {
+            float:left;
+            width: 100px;
+            height: 62px;;
+        }
+        h2 {
+            float:left;
+            font-size: 1.2em;
+            font-weight: normal;
+            padding-left: 20px;
+        }
+        table{
+            overflow-y:scroll;
+            height:300px;
+            display:block;
+            border:1px solid gray;
+            margin-top:50px;
+        }
+        td:nth-of-type(1){
+            width:35px;
+        }
+        td:nth-of-type(2){
+            width:75px;
+            height:75px;
+        }
+        td:nth-of-type(3){
+            width:75px;
+        }
+        td:nth-of-type(4){
+            width:60px;
+        }
+        .profilePic {
+            width: 75px;
+            height: 75px;
+        }
+        .counter {
+            background: #333333;
+            color: white;
+            padding-left: 5px;
+            border-style: groove;
+            border-width: 3px;
+        }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="compiled/flipclock.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="compiled/flipclock.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/puzzle.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Puzzle</title>
+    <meta property="fb:app_id" content="1911981235740510" />
+    <meta property="og:title" content="Time Puzzle" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url"  content="https://games.shadow.com/staticContent/mbb/MoneyTimeHtml5App/puzzle.html" />
+    <meta property="og:description" content="Exercise your brain with the best online puzzle game. Measure your IQ and challenge your friends." />
+    <meta property="og:image" content="http://games.shadow.com/staticContent/mbb/MoneyTimeHtml5App/assets/p/FunWorld.jpg" >
+
+    <meta property="og:image:secure_url" content="https://games.shadow.com/staticContent/mbb/MoneyTimeHtml5App/assets/p/FunWorld.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="736" />
+    <meta property="og:image:height" content="460" />
+
+</head>
+<body onload="init();">
+    <div class="container">
+        <div id="canvasDiv" style="float: left; width: 737px; height: 462px;">
+            <iframe id="lbIframe" src="leaders.html" style="visibility: hidden"></iframe>
+            <canvas id="puzzleCanvas" style="float:left"></canvas>
+        </div>
+        <aside id="sideMenu" style="padding: 0px; float: left; width: 165px;">
+            <ul class="uls" style="list-style-type: none; margin-top: 25px; padding-left:5px;" >
+                <li class="listItem"><button class="navButtons" onclick="prevImage()" style="background-image:url('assets/Left.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="replayGame()" style="background-image:url('assets/Refresh.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="nextImage()" style="background-image:url('assets/Right.png');"> </button></li>
+            </ul>
+            <br>
+            <div class="clock"></div>
+            <br>
+            <div style="margin-left: 19px;"> Your Best Score <br>
+                <div id="bestScore4Puzzle" class="counter">
+                </div>
+            </div>
+            <br> <br>
+            <ul style="list-style-type: none; margin-top: 25px; padding-left:5px;" >
+                <li class="listItem"><button class="navButtons" onclick="userSettings()" style="background-image:url('assets/Profile.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="leadersBoard()" style="background-image:url('assets/Leaders.png');"> </button></li>
+                <li class="listItem"><button class="navButtons" onclick="pauseGame()" style="background-image:url('assets/pauseResume.png');"> </button></li>
+            </ul>
+            <br>
+            <div class="urBetter" onclick="iqPage()"><br> You are better than <br>
+                <div class="urBetter" id="urBetterValue"> 0% </div>
+                of puzzle solvers</div> <br>
+            <a id="sendChallenge" href="whatsapp://send?text=You have to try this game http://shdw.co/27RJO4" onclick="sendChallenge(); return;"
+                ><img class="shareButtons" src="assets/WhatAppButton.png"></a>
+            <a id="facebookShare" href="#" onclick="sendFBShare(); return;"
+                ><img class="shareButtons" src="assets/facebookButton.png"> </a>
+        </aside>
+    </div>
+    <!-- Google Analytics Code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45283899-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- facebook integration code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1911981235740510',
+          xfbml      : true,
+          version    : 'v2.9'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script language="JavaScript" type="text/javascript" src="js/puzzutils.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/puzzle.js" onclick="init"></script>
+</body>
+</html>

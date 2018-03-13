@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans',serif;
+    font-size: 0.9em;
+}
+
+.fLabels {
+    margin-left:130px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+.radioB {
+    margin-left: 10px;
+}
+
+.inputFields {
+    border: grey 2px solid;
+    border-radius: 10px;
+    width: 220px;
+    height: 25px;
+    position: fixed;
+    left: 290px;
+    font-size: 16px;
+}
+
+#nameField {
+}
+#saveBtn {
+      margin-left: 352px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 80px;
+      background: linear-gradient(#27A7B3, #1797A3);
+      border-radius: 10px;
+      font-size: 16px;
+}
+
+#myPicSection {
+    width:100%;
+    float:left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#pictureField {
+    border: grey solid 2px;
+    border-radius: 50px;
+    margin-left: 90px;
+}
+
+#genderSelect {
+    font-size: 16px;
+}
+
+#genderSelect label {
+    font-size: 16px;
+    background-color: #fff;
+}
+
+#genderSelect input[type="radio"]:checked+label {
+    font-size: 16px;
+    background-color: #27A7B3;
+}
+
+#bornDate {
+}
+
+#countrySelect {
+}

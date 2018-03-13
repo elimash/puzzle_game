@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaders Board</title>
+    <style>
+        head {
+        }
+        h1 {
+            text-align: center;
+            margin: 0px;
+            margin-bottom: -5px;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        body {
+            background: lightgray;
+        }
+        span {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #leftSide {
+            float:left;
+            margin-left: 50px;
+        }
+        #rightSide {
+            float: left;
+            margin-left: 25px;
+        }
+        #currentPuzzleThumbnail {
+            float:left;
+            width: 100px;
+        }
+        h2 {
+            float:left;
+            font-size: 1.2em;
+            font-weight: normal;
+            padding-left: 50px;
+        }
+        table{
+            overflow-y:scroll;
+            height:300px;
+            display:block;
+            border:1px solid gray;
+            margin-top:50px;
+        }
+        td:nth-of-type(1){
+            width:35px;
+        }
+        td:nth-of-type(2){
+            width:75px;
+            height:75px;
+        }
+        td:nth-of-type(3){
+            width:75px;
+        }
+        td:nth-of-type(4){
+            width:60px;
+        }
+        .profilePic {
+            width: 75px;
+            height: 75px;
+        }
+        .counter {
+            background: #333333;
+            color: white;
+            padding-left: 10px;
+            border-style: groove;
+            border-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 align="left"> Leaders Board </h1> <br>
+        <span id="leftSide">
+            <img id="currentPuzzleThumbnail" src="assets/Mercedes-AMG-2.jpg">
+            <h2> Current Puzzle</h2> <br>
+            <table id="cpTable">
+                <thead>
+                   <!-- <tr>
+                        <th>Rank</th>
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                   -->
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>120</td>
+                    <td> <img class="profilePic" src="assets/profile1.jpg"> </td>
+                    <td>Jain Singer</td>
+                    <td><div class="counter"> 01:19 </div></td>
+                  </tr>
+                  <tr>
+                    <td>121</td>
+                    <td> <img class="profilePic" src="assets/profile2.jpg"> </td>
+                    <td>Jim Fischer</td>
+                    <td> <div class="counter"> 01:23 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>122</td>
+                    <td> <img class="profilePic" src="assets/profile3.jpg"> </td>
+                    <td>Justin Dimberlake</td>
+                    <td> <div class="counter"> 01:32 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>123</td>
+                    <td> <img class="profilePic" src="assets/profile4.jpg"> </td>
+                    <td>Jack Diver</td>
+                    <td> <div class="counter"> 01:33 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>124</td>
+                    <td> <img class="profilePic" src="assets/profile1.jpg"> </td>
+                    <td>John Dasson</td>
+                    <td> <div class="counter"> 01:42 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>125</td>
+                    <td> <img class="profilePic" src="assets/profile3.jpg"> </td>
+                    <td>Jeremeyah Dalton</td>
+                    <td> <div class="counter"> 01:52 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>126</td>
+                    <td> <img class="profilePic" src="assets/profile2.jpg"> </td>
+                    <td>Jacob Denver</td>
+                    <td> <div class="counter"> 01:53 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>127</td>
+                    <td> <img class="profilePic" src="assets/profile4.jpg"> </td>
+                    <td>Justin Dow</td>
+                    <td> <div class="counter"> 02:01 </div>  </td>
+                  </tr>
+
+                </tbody>
+            </table>
+        </span>
+        <span id="rightSide">
+            <h2> Overall Score</h2> <br>
+            <table id="oaTable">
+                <thead>
+                  <!-- <tr>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                  -->
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>58</td>
+                    <td> <img class="profilePic" src="assets/profile3.jpg"> </td>
+                    <td>Justin</td>
+                    <td><div class="score"> 89.8 </div></td>
+                  </tr>
+                  <tr>
+                    <td>59</td>
+                    <td> <img class="profilePic" src="assets/profile2.jpg"> </td>
+                    <td>Jim</td>
+                    <td> <div class="score"> 88.2 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>60</td>
+                    <td> <img class="profilePic" src="assets/profile1.jpg"> </td>
+                    <td>Jain Jones</td>
+                    <td> <div class="score"> 87.3 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>62</td>
+                    <td> <img class="profilePic" src="assets/profile4.jpg"> </td>
+                    <td>Jack Check</td>
+                    <td> <div class="score"> 86.4 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>62</td>
+                    <td> <img class="profilePic" src="assets/profile1.jpg"> </td>
+                    <td>Jill Shmil</td>
+                    <td> <div class="score"> 85.5 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>63</td>
+                    <td> <img class="profilePic" src="assets/profile2.jpg"> </td>
+                    <td>Jacob Dalkob</td>
+                    <td> <div class="score"> 84.6 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>64</td>
+                    <td> <img class="profilePic" src="assets/profile3.jpg"> </td>
+                    <td>John None</td>
+                    <td> <div class="score"> 83.7 </div>  </td>
+                  </tr>
+                  <tr>
+                    <td>65</td>
+                    <td> <img class="profilePic" src="assets/profile1.jpg"> </td>
+                    <td>Jason Grason</td>
+                    <td> <div class="score"> 82.8 </div>  </td>
+                  </tr>
+
+                </tbody>
+            </table>
+        </span>
+    </div>
+
+</body>
+</html>

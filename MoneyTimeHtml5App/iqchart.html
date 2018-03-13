@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IQ Chart</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link rel="stylesheet" type="text/css" href="css/iqchart.css">
+</head>
+<body>
+<div id="container">
+    <h1 id="header"> IQ Chart </h1>
+    <br>
+    <span id="currentPuzzle" style="float:left">
+        <h2 class="sideTitles" id="currentPuzzleTitle">Current Puzzle</h2>
+        <img id="currentPuzzleThumbnail" src="assets/Mercedes-AMG-2.jpg">
+        <div class="barContainers" id="cpBarContainer">
+            <div id="cpPercentageBar">80%</div>
+        </div>
+        <canvas id="timeScale" style="float:left" width="80px" height="380px"></canvas>
+    </span>
+    <span id="you" style="float:left">
+        <h2 id="youTitle">You</h2>
+        <canvas id="youCanvas" width="160px" height="340px" ></canvas>
+    </span>
+    <span id="averageScore" style="float:left">
+        <h2 class="sideTitles" id="averageScoreTitle"> Average Score</h2>
+        <canvas id="iqScale" style="float:left" width="80px" height="380px"></canvas>
+        <div class="barContainers"  id="asBarContainer">
+            <div id="asPercentageBar">75%</div>
+        </div>
+    </span>
+</div>
+<script language="JavaScript" type="text/javascript" src="js/puzzutils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/iqchart.js"> </script>
+</body>
+</html>

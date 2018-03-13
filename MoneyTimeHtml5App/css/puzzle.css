@@ -1,0 +1,363 @@
+            body {
+                height: 100%;
+                overflow: hidden;
+                width: 100%;
+                position: fixed;
+                font-family: 'Open Sans',serif;
+            }
+            #sideMenu {
+                margin-left: 5px;
+                background: linear-gradient(#a7a0a0, #253343);
+                height: 461px;
+            }
+            .listItem {
+                float:left;
+            }
+            @keyframes btnAnimation {
+                from {background-color: black;}
+                to {background-color: #111;}
+            }
+            .navButtons {
+                float: left;
+                margin-right:8px;
+                margin-left: 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: #999999;
+                background-repeat: no-repeat;
+                background-position: 0px center;
+            }
+            .clock {
+                float:left;
+                padding-left: 30px;
+                margin: 1em;
+                zoom: 0.4;
+                zoom: 0.4;
+                -ms-zoom: 0.4;
+                -webkit-zoom: 0.4;
+                -moz-transform:  scale(0.4, 0.4);
+                -moz-transform-origin: left center;
+                padding-top: 40px;
+            }
+            #bestScore4Puzzle {
+                text-align: center;
+                font-size: large;
+            }
+            .urBetter {
+                text-align: center;
+                margin: 2px;
+                margin-top: 10px
+            }
+            #urBetterValue {
+                background: linear-gradient(#dcdcdc, #a0a0a0);
+            }
+            #sendChallenge {
+                margin-left: 10px;
+                width: 40px;
+            }
+            #facebookShare {
+                margin-left: 20px;
+                width: 40px;
+            }
+            .shareButtons {
+                width: 40px;
+                margin-right: 25px;
+                border-radius: 10px;
+            }
+            .counter {
+				float:left;
+				padding:6px;
+				border: solid 1px #313333;
+				border-radius:5px;
+				background:linear-gradient(#bbbbbb,#333333);:-moz-linear-gradient(#bbbbbb,#333333);
+				background: -webkit-linear-gradient(#bbbbbb,#333333);
+				background:-ms-linear-gradient(#bbbbbb,#333333);
+				box-shadow:0 2px 4px rgba(0,0,0,0.4);
+			}
+			.counter span {
+			    float:left;
+				width:22px;
+				height:30px;
+				margin:0;
+				padding:0;
+			    text-indent:-9999px;
+				font-size:0.0001em;
+			    background-image:url(../assets/counter-sprite.png);
+			}
+
+			/* Set all the background positions, and hook up all the animations */
+			.counter .digit-0 {
+			    background-position:0 -300px;
+			    animation-name: digitSpin0;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+				-webkit-animation-name: digitSpin0;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin0;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-1 {
+			    background-position:0 -30px;
+			    animation-name: digitSpin1;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+				-webkit-animation-name: digitSpin1;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin0;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-2 {
+			    background-position:0 -60px;
+				animation-name: digitSpin2;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin2;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin2;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-3 {
+			    background-position:0 -90px;
+				animation-name: digitSpin3;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin3;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin3;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count:1;
+			}
+			.counter .digit-4 {
+			    background-position:0 -120px;
+				animation-name: digitSpin4;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin4;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin4;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-5 {
+			    background-position:0 -150px;
+				animation-name: digitSpin5;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin5;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin5;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-6 {
+			    background-position:0 -180px;
+				animation-name: digitSpin6;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin6;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin6;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-7 {
+			    background-position:0 -210px;
+				animation-name: digitSpin7;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin7;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin7;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-8 {
+			    background-position:0 -240px;
+				animation-name: digitSpin8;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin8;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin8;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+			.counter .digit-9 {
+			    background-position:0 -270px;
+
+				animation-name: digitSpin9;
+			    animation-duration: 3s;
+			    animation-iteration-count: 1;
+
+			    -webkit-animation-name: digitSpin9;
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 1;
+
+				-moz-animation-name: digitSpin9;
+			    -moz-animation-duration: 3s;
+			    -moz-animation-iteration-count: 1;
+			}
+
+			/* Animation */
+			@keyframes digitSpin0 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -300px; }
+			}
+			@keyframes digitSpin1 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -30px; }
+			}
+			@keyframes digitSpin2 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -60px; }
+			}
+			@keyframes digitSpin3 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -90px; }
+			}
+			@keyframes digitSpin4 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -120px; }
+			}
+			@keyframes digitSpin5 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -150px; }
+			}
+			@keyframes digitSpin6 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -180px; }
+			}
+			@keyframes digitSpin7 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -210px; }
+			}
+			@keyframes digitSpin8 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -240px; }
+			}
+			@keyframes digitSpin9 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -270px; }
+			}
+
+			/* Animation for Webkit */
+			@-webkit-keyframes digitSpin0 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -300px; }
+			}
+			@-webkit-keyframes digitSpin1 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -30px; }
+			}
+			@-webkit-keyframes digitSpin2 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -60px; }
+			}
+			@-webkit-keyframes digitSpin3 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -90px; }
+			}
+			@-webkit-keyframes digitSpin4 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -120px; }
+			}
+			@-webkit-keyframes digitSpin5 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -150px; }
+			}
+			@-webkit-keyframes digitSpin6 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -180px; }
+			}
+			@-webkit-keyframes digitSpin7 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -210px; }
+			}
+			@-webkit-keyframes digitSpin8 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -240px; }
+			}
+			@-webkit-keyframes digitSpin9 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -270px; }
+			}
+
+			/* Animation for Gecko (Firefox) */
+			@-moz-keyframes digitSpin0 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -300px; }
+			}
+			@-moz-keyframes digitSpin1 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -30px; }
+			}
+			@-moz-keyframes digitSpin2 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -60px; }
+			}
+			@-moz-keyframes digitSpin3 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -90px; }
+			}
+			@-moz-keyframes digitSpin4 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -120px; }
+			}
+			@-moz-keyframes digitSpin5 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -150px; }
+			}
+			@-moz-keyframes digitSpin6 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -180px; }
+			}
+			@-moz-keyframes digitSpin7 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -210px; }
+			}
+			@-moz-keyframes digitSpin8 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -240px; }
+			}
+			@-moz-keyframes digitSpin9 {
+			    from { background-position:0 0; }
+			    to { background-position:0 -270px; }
+			}
+			#lbIframe {
+			    visibility: hidden;
+                width: 0;
+                height: 0;
+                border: 0px;
+                float: left;
+			}

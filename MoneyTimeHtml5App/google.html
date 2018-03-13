@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Demo</title>
+    <link href="css/new_style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+$(document).ready(function(){
+ var q = '605-475-6962';
+ results=5;
+ if(location.search) q=unescape(location.search);
+ $.getScript('https://ajax.googleapis.com/ajax/services/search/web?callback=processResults&rsz='+results+'&v=1.0&q='+escape(q));
+});
+
+function processResults(data){
+ $.each(data.responseData.results, function (i, data) {
+  $('#gResults').append('<a href="'+ data.url +'" target="_blank">'+ data.titleNoFormatting +'<a><br />' + data.content + '<hr />');
+ });
+}
+</script>
+</head>
+<body>
+
+<h1>Results</h1>
+
+605-475-6962
+
+<div id="gResults"></div>
+
+</body>
+</html>
